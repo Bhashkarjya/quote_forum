@@ -1,0 +1,22 @@
+{% extends "random/base.html" %}
+{% block content %}
+
+    <h3 style="
+    margin: 50px;
+    text-align: center;
+    line-height: 1;
+    font-size: 5vh;
+    color:white;
+    text-shadow: 1px 1px 20px black;">{{ quote }}</h2>
+    <h4 style="
+    text-align: center;
+    margin:50px;
+    opacity: 70%;
+    margin-top: -30px;
+    color: white;
+    text-shadow: 2px 2px 10px black;"
+    >{{ author }}</h4>
+    <div class="">
+      <button style="position:relative; top:50%; left:50%; -ms-transform: translate(-50%,-50%);transform: translate(-50%,-50%);"><a class="last-font nav-link btn btn-danger mx-2" style="color:white;" href="{% url 'random' %}">Get Another Quote</a></button>
+    </div>
+{% endblock content %}
