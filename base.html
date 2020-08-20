@@ -1,0 +1,170 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/custom-style.css">
+    <script src="https://kit.fontawesome.com/45637c5946.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link href='https://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet'>
+    <style>
+    .big-banner{
+      background-image: url('../static/img/bg3.jpg');
+      background-size: 100%;
+      background-repeat: no-repeat;
+      }
+
+      .fresh-content{
+    background: linear-gradient(to right, rgb(168,58,58), rgb(228,102,102));
+  }
+
+    .before-footer{
+        background-image: url('../static/img/px1.jpg');
+        background-size: 100%;
+    }
+    .new-bg{
+      background: linear-gradient(to left,rgb(0,0,0), rgb(128,128,128));
+    }
+  .header {
+  padding: 0px;
+  text-align: center;
+  color: black;
+  font-family: 'Tangerine', serif;
+  font-size: 100px;
+  text-shadow: 4px 4px 4px #aaa;
+  /* font-size: 70px; */
+  }
+
+  .new-font{
+    font-family: 'Audiowide';font-size: 22px;
+  }
+
+  .another-font{
+    font-family: 'Sofia';font-size: 22px;
+  }
+
+  .last-font{
+    font-family: 'Aclonica';font-size: 18px;
+  }
+  .footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: linear-gradient(to left,rgb(0,0,0), rgb(128,128,128));
+  color: white;
+  height: 50px;
+  }
+
+    </style>
+    <title>Quote Forum</title>
+  </head>
+  <body style="background-color: rgb(240, 240, 230);">
+    <div class="header" style="background-color: rgb(240, 240, 230)">
+      Quote Forum
+    </div>
+    <nav class=" new-font new-bg navbar navbar-expand-lg navbar-light bg-white">
+      <!-- <span class="navbar-brand mb-3" href="#"><i class="fab fa-accusoft"></i></span> -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse " id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto container-fluid">
+
+        <a class="nav-link btn btn-outline-dark mx-2" style="color:white;" href="{% url 'index' %}">Home</a>
+        <a class="nav-link btn btn-outline-dark mx-2" style="color:white;" href="{% url 'random' %}">Get A Random Quote</a>
+        <!-- <a class="nav-link btn btn-outline-dark mx-2" style="color:white;" href="{% url 'many' %}">Write Your Own Quote</a> -->
+        <!-- <a class="nav-link btn btn-light mx-2" href="#"><i class="fas fa-shopping-cart"></i></a> -->
+        <a class="nav-link btn btn-outline-dark mx-2" style="color:white;" href="https://github.com/Bhashkarjya/quote_forum">GitHub Repo</a>
+        <a class="nav-link btn btn-outline-dark mx-2" style="color:white;" href="#">About The Developer</a>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="jumbotron big-banner mb-0" style="height:500px; padding-top:150px;">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col">
+              <div class="col-4 text-light">
+                <h1 class="display-5  ">Aspire. Accomplish.</h1>
+                <p class="lead">Start your Day with A Quote</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+
+
+        <div class="fresh-content text-light py-3">
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <div class="media">
+                  <i class="fas fa-play-circle mr-3 display-4"></i>
+                  <div class="media-body">
+                    <h5 class="mt-0">More Engagement</h5>
+                        Motivation is key to your success.
+                    </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="media">
+                  <i class="far fa-clock mr-3 display-4"></i>
+                  <div class="media-body">
+                    <h5 class="mt-0">Goals are crucial</h5>
+                    Take your job one bite at a time.
+                    </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="media">
+                  <i class="far fa-check-circle mr-3 display-4"></i>
+                  <div class="media-body">
+                    <h5 class="mt-0">Give A Reason Why</h5>
+                    All you need is a Purpose.
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container" style="margin-top: 100px">
+          <div class="row">
+            <div class="col text-center border-right">
+              <div class="col-8 offset-1">
+                <h4 class="another-font">Never Give Up</h4>
+                <p class="lead last-font">“If birds can glide for long periods of time, then… why can’t I?” -Orville Wright</p>
+                <a href="https://www.lifehack.org/articles/communication/8-reasons-why-you-shouldnt-give-easily.html" class="btn btn-lg btn-danger new-font">Read More</a>
+              </div>
+            </div>
+
+            <div class="col text-center">
+              <div class="col-8 offset-1">
+                <h4 class="another-font">The Power Of Strong Quotes</h4>
+                <p class="lead last-font">Power is not revealed by striking hard or often, but by striking true. —Honoré de Balzac</p>
+                <a href="https://www.psychologytoday.com/us/blog/here-there-and-everywhere/201209/37-quotes-power" class="btn btn-lg btn-danger new-font">Power Of Quotes</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br><br><br>
+        <div class="footer container-fluid another-font">
+            <div class="text-center">
+              Created in Quarantine Mode
+          </div>
+        </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+  </body>
+</html>
